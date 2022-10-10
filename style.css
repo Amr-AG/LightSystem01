@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #2b2b2b;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  flex-direction: column;
+  position: relative;
+}
+.back {
+  filter: blur(150px);
+  width: 500px;
+  height: 185px;
+  background-color: #fff;
+  position: absolute;
+  top: 240px;
+  display: none;
+  animation: both lightt 2s;
+}
+@keyframes lightt {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.backLight {
+  display: block;
+}
+.wire {
+  height: 80px;
+  width: 3px;
+  background-color: #000000;
+  z-index: 5;
+}
+.ball {
+  height: 20px;
+  width: 30px;
+  background-color: #000000;
+  border-radius: 10px 10px 0 0;
+  z-index: 5;
+}
+.topLight {
+  height: 25px;
+  width: 30px;
+  background-color: #444;
+  border-radius: 0px 0px 10px 10px;
+  z-index: 10;
+}
+.midLight {
+  height: 29px;
+  width: 35px;
+  background-color: #444;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -17px;
+  box-shadow: 0px -2px 0px 0px #444;
+  z-index: 15;
+}
+.bottomLight {
+  height: 77px;
+  width: 75px;
+  position: absolute;
+  bottom: -70px;
+  background-color: #444;
+  border-radius: 80% 80% 80% 80%;
+  z-index: 10;
+}
+.buttonContainer {
+  height: 60px;
+  width: 70px;
+  margin: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  z-index: 5;
+}
+.but {
+  border: solid 1px #444;
+  border-radius: 5px;
+  width: 15px;
+  height: 25px;
+  background-color: #fff;
+  margin: 10px auto;
+  cursor: pointer;
+  box-shadow: 0px -6px 0px #444;
+  z-index: 5;
+  transition: 300ms;
+}
+.active {
+  transition: 300ms;
+  box-shadow: 0px 6px 0px #444;
+}
+.light {
+  transition: 1.5s;
+  box-shadow: 0px 0px 20px 4px #fff;
+  background-color: #fff;
+}
